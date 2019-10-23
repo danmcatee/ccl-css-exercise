@@ -122,3 +122,39 @@ div img {
     top: 971px;
     bottom: 450px;
 }
+
+#grid-wrapper {
+    width: calc(100%-140px);
+    padding: 100px 70px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "kaab1 kaab1 kaab2 kaab3" "kaab4 kaab5 kaab6 kaab6";
+}
+
+.card-1 {
+    grid-area: kaab1;
+}
+
+.card-2 {
+    grid-area: kaab2;
+}
+
+.card-3 {
+    grid-area: kaab3;
+}
+
+.card-4 {
+    grid-area: kaab4;
+}
+
+.card-5 {
+    grid-area: kaab5;
+}
+
+.card-6 {
+    grid-area: kaab6;
+}
+
+.card {
+    width: 100%;
+}
