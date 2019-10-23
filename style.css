@@ -13,14 +13,14 @@ ul {
     height: 80px;
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
 
 }
 
 .logo {
     display: flex;
-    justify-content: flex-start;
     height: 50px;
-    margin-top: 15px;
     width: 50px;
 }
 
@@ -49,6 +49,7 @@ ul {
     height: 30px;
     width: 30px;
     margin-right: 30px;
+    align-items: center;
 }
 
 ul img {
@@ -63,19 +64,21 @@ ul img {
     display: flex;
     justify-content: space-around;
     padding-top: 68px;
+    padding-bottom: 45px;
 }
 
 .container img {
     height: 200px;
-    width: 368px;
+    width: 368px; /* alternartive here is to use width: calc(100% - 120px); */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
+
 
 .container .img1 {
     background-image: url(/assets/tree1.jpg);
     width: 100%;
     margin-top: 0px;
-    background-size: contain;
+    background-size: contain; /* background-size: cover ; background-repeat: no repeat ; background-position: center center*/
     height: 200px;
     width: 355px;
     text-align: center;
@@ -116,4 +119,88 @@ ul img {
     font-weight: bold;
     padding: 20px 30px;
     text-align: center;
+}
+
+.bobross {
+    background-color: #e5e5e5;
+    height: 513px;
+    display: flex;
+    width: calc(100% - 120px);
+    padding: 10px 60px 30px 60px;
+    text-align: flex-end;
+    align-items: flex-end;
+    margin-top: 0px;
+}
+
+.bobross .text {
+   margin-right: 70px; 
+   margin-top: 0px;
+}
+.bobross h2 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+}
+
+.theboss img{
+    width: 409px;
+    height: 425px;
+  
+}
+
+.bobross p {
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.bobross p:last-of-type {
+    margin-bottom: 0;
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 45px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "bob2 bob2 bob3 bob4"
+    "bob5 bob6 bob7 bob7";
+    padding-top: 85px;
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-bottom: 50px;
+}
+
+.bob2 {
+    grid-area: bob2;
+}
+
+.bob3 {
+    grid-area: bob3;
+}
+
+.bob4 {
+    grid-area: bob4;
+}
+
+.bob5 {
+    grid-area: bob5;
+}
+
+.bob6 {
+    grid-area: bob6;
+}
+
+.bob7 {
+    grid-area: bob7;
+}
+
+.grid img {
+    height: 291px;
 }
