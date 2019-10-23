@@ -1,0 +1,82 @@
+body{
+   margin: 0;
+}
+
+.nav-bar{
+   background-color: #535353;
+   height: 80px;
+   padding: 0 100px;
+}
+
+.nav-wrapper{
+   width: 90%;
+   margin: 0 auto;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav-list{
+   list-style: none;
+   display: flex;
+}
+
+.nav-list li{
+   margin-right: 40px;
+   color: white;
+}
+
+.nav-list li: :last-of-type{
+   margin: 0;
+}
+
+#wrapper{
+   width: 90%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto;
+   grid-template-areas: 
+      "card-1 card-2 card-3";
+   gap: 80px;
+}
+
+.grey{
+   width: 380px;
+   height: 200px;
+   margin: 20px;
+}
+
+.card-1{
+   grid-area: card-1;
+   background-image: url("./assets/tree1.jpg");
+   background-size: 100% 100%;
+}
+
+.box{
+   margin: 50px;
+   background-color: black;
+   opacity: 0.8;
+   padding: 20px;
+}
+
+.text{
+   color: white;
+   text-align: center;
+   font-size: 30;
+   text-align: center;
+   font-family: 'Roboto';
+}
+
+.card-2{
+   grid-area: card-2;
+   background-image: url("./assets/tree2.jpg");
+   background-size: 100% 100%;
+}
+
+.card-3{
+   grid-area: card-3;
+   background-image: url("./assets/tree3.jpeg");
+   background-size: 100% 100%;
+}
