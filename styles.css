@@ -116,6 +116,10 @@ p {
     line-height: 18px;
 }
 
+div img {
+    height: 425px;
+}
+
 #grid-wrapper {
     width: calc(100%-140px);
     padding: 100px 70px;
