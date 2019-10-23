@@ -116,13 +116,6 @@ p {
     line-height: 18px;
 }
 
-div img {
-    height: 435px;
-    width: 409px;
-    top: 971px;
-    bottom: 450px;
-}
-
 #grid-wrapper {
     width: calc(100%-140px);
     padding: 100px 70px;
