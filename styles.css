@@ -84,3 +84,24 @@ body {
 .card-3 {
   background-image: url("assets/tree3.jpeg");
 }
+
+#boss {
+  background-color: #f5f5f5;
+  width: calc(100% - 120px);
+  padding: 100px 60px;
+  display: flex;
+}
+
+#boss img {
+  width: 400px;
+}
+
+.content h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.content {
+  margin-right: 50px;
+}
