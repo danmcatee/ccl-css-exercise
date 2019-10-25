@@ -15,6 +15,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: space-between;
+   font-family: "Roboto", sans-serif;
 }
 
 .nav-list{
@@ -40,6 +41,7 @@ body{
    grid-template-areas: 
       "card-1 card-2 card-3";
    gap: 80px;
+   font-family: 'Roboto', sans-serif;
 }
 
 .grey{
@@ -79,4 +81,83 @@ body{
    grid-area: card-3;
    background-image: url("./assets/tree3.jpeg");
    background-size: 100% 100%;
+}
+
+#section-wrapper{
+   margin: 40px 0;
+   padding: 40px;
+   background-color: lightgrey;
+   display: flex;
+}
+
+.description{
+   margin: 40px;
+}
+
+.header{
+   justify-content: center;
+}
+
+.script{
+   text-align: center;
+   justify-content: center;
+}
+
+
+#bosspics{
+   max-width: 1300px;
+   margin: 0 auto;
+   display:grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto;
+   grid-template-areas: 
+      "pic1 pic1 pic2 pic3"
+      "pic4 pic5 pic6 pic6";
+   gap: 40px;
+   padding: 40px;
+}
+
+.smallboss{
+   width: 300px;
+   height: 300px;
+}
+
+.pic1{
+   grid-area: pic1;
+   background-image: url(./assets/bob2.png);
+   background-size: cover;
+}
+
+.pic2{
+   grid-area: pic2;
+   background-image: url(./assets/bob3.png);
+   background-size: cover;
+}
+
+.pic3{
+   grid-area: pic3;
+   background-image: url(./assets/bob4.png);
+   background-size: cover;
+}
+
+.pic4{
+   grid-area: pic4;
+   background-image: url(./assets/bob5.png);
+   background-size: cover;
+}
+
+.pic5{
+   grid-area: pic5;
+   background-image: url(./assets/bob6.png);
+   background-size: cover;
+}
+
+.pic6{
+   grid-area: pic6;
+   background-image: url(./assets/bob7.png);
+   background-size: cover;
+}
+
+.bigboss :last-of-type{
+   margin: 0;  
 }
