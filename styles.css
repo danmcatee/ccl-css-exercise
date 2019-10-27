@@ -1,9 +1,17 @@
+:root {
+  --dark-color: #535353;
+  --light-color: #f5f5f5;
+  --horizontal-padding: 60px;
+  --container-width: calc(100% - var(--horizontal-padding) * 2);
+}
+
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
 }
 
 #nav-bar {
+<<<<<<< HEAD
     width: calc(100%-120px);
     background-color: #535353;
     height: 80px;
@@ -11,6 +19,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
+=======
+  width: var(--container-width);
+  background-color: var(--dark-color);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--horizontal-padding);
+>>>>>>> 1f0dd23af5ba7742d779589dd44f2c491472734f
 }
 
 .logo {
@@ -24,11 +41,19 @@ body {
 }
 
 .nav-item {
+<<<<<<< HEAD
     font-family: Raleway, sans-serif;
     margin-right: 40px;
     color: #f5f5f5;
     font-size: 22px;
     font-weight: bold;
+=======
+  font-family: Raleway, sans-serif;
+  margin-right: 40px;
+  color: var(--light-color);
+  font-size: 22px;
+  font-weight: bold;
+>>>>>>> 1f0dd23af5ba7742d779589dd44f2c491472734f
 }
 
 .nav-item:last-of-type {
@@ -48,6 +73,7 @@ body {
 }
 
 #tree-cards {
+<<<<<<< HEAD
     width: calc(100% - 120px);
     padding: 100px 60px;
     display: flex;
@@ -73,6 +99,32 @@ body {
     padding: 20px 40px;
     font-size: 12px;
     text-align: center;
+=======
+  width: var(--container-width);
+  padding: 100px var(--horizontal-padding);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  height: 300px;
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card span {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 40%;
+  color: var(--light-color);
+  padding: 20px 40px;
+  font-size: 12px;
+  text-align: center;
+>>>>>>> 1f0dd23af5ba7742d779589dd44f2c491472734f
 }
 
 .card-1 {
@@ -92,10 +144,19 @@ body {
     display: flex;
 }
 
+<<<<<<< HEAD
 .wrapper {
     display: flex;
     margin: 39px 60px 49px 60px;
     justify-content: space-between;
+=======
+#boss {
+  background-color: var(--light-color);
+  width: var(--container-width);
+  padding: 100px var(--horizontal-padding);
+  display: flex;
+  align-items: flex-end;
+>>>>>>> 1f0dd23af5ba7742d779589dd44f2c491472734f
 }
 
 .text {
@@ -116,6 +177,7 @@ p {
     line-height: 18px;
 }
 
+<<<<<<< HEAD
 div img {
     height: 425px;
 }
@@ -155,3 +217,42 @@ div img {
 .card {
     width: 100%;
 }
+=======
+#grid {
+  display: grid;
+  width: var(--container-width);
+  padding: 100px var(--horizontal-padding);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "bob1 bob1 bob2 bob3" "bob4 bob5 bob6 bob6";
+  gap: 20px;
+}
+
+.grid-img {
+  width: 100%;
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.bob-1 {
+  grid-area: bob1;
+}
+
+.bob-2 {
+  grid-area: bob2;
+}
+
+.bob-3 {
+  grid-area: bob3;
+}
+
+.bob-4 {
+  grid-area: bob4;
+}
+.bob-5 {
+  grid-area: bob5;
+}
+.bob-6 {
+  grid-area: bob6;
+}
+>>>>>>> 1f0dd23af5ba7742d779589dd44f2c491472734f
